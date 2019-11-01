@@ -8,6 +8,12 @@ class App extends Component {
             count: 0
         }
     }
+    componentDidMount() {
+        console.log(`componentDidMount=> You clicked ${this.state.count} times`)
+    }
+    componentDidUpdate() {
+        console.log(`componentDidUpdate=> You clicked ${this.state.count} times`)
+    }
     render() {
         return (
             <div>

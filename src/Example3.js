@@ -1,17 +1,21 @@
 import React, { useState } from 'react'
 
-function Example2() {
+let showSex = true
+function Example3() {
     const [age, setAge] = useState(18)
-    const [sex, setSex] = useState('girl')
+    if (showSex) {
+        const [sex, setSex] = useState('girl')
+        showSex = false
+    }
+    
     const [work, setWork] = useState('developer')
     return (
         <div>
             <p>hh:{age}</p>
             <p>sex:{sex}</p>
             <p>work:{work}</p>
-            <button onClick={() => {setAge(16)}}>Change Age</button>
         </div>
     )
 }
 
-export default Example2
+export default Example3
