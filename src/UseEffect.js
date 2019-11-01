@@ -22,7 +22,7 @@ function List() {
     return <h3>List-page</h3>
 }
 
-function Example() {
+function UseEffect() {
     const [count, setCount] = useState(0) //数组解构
     //等价于
     // let _useState = useState(0)
@@ -50,4 +50,4 @@ function Example() {
     )
 }
 
-export default Example
+export default UseEffect

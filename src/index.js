@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import App from './App';
-import Example from './Example'
+// import UseEffect from './UseEffect'
 // import Example2 from './Example2'
 // import Example3 from './Example3'
+import UseContext from './UseContext'
 
-ReactDOM.render(<Example />, document.getElementById('root'));
+ReactDOM.render(<UseContext />, document.getElementById('root'));
