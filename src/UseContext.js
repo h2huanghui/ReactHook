@@ -1,15 +1,16 @@
-import React, { useState, createContext, useContext } from 'react'
+import React, { useState, createContext } from 'react'
+import Counter from './Counter'
 
-const CountContext = createContext()
+export const CountContext = createContext({})
 
-function Counter() {
-    const count = useContext(CountContext)
-    return (
-        <h2>{count}</h2>
-    )
-}
+// function Counter() {
+//     const count = useContext(CountContext)
+//     return (
+//         <h2>{count}</h2>
+//     )
+// }
 
-function UseContext() {
+export const  UseContext = () => {
     const [count, setCount] = useState(0)
     return (
         <div>
@@ -23,4 +24,3 @@ function UseContext() {
     )
 }
 
-export default UseContext

@@ -39,3 +39,21 @@ function Index() {
     )
 }
 ```
+
+## useContext 组件传值
+```
+import React, { useState, createContext, useContext } from 'react'
+
+const CountContext = createContext()
+
+const count = useContext(CountContext) //count是将要传递的变量
+
+
+{/* count变量允许跨层级实现传递和引用(实现了上下文) */}
+<CountContext.Provider value={count} >
+    <Counter />
+</CountContext.Provider>
+
+```
+
+## useReducer
