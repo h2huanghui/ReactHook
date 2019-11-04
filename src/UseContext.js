@@ -1,5 +1,5 @@
 import React, { useState, createContext } from 'react'
-// import Counter from './Counter'
+import Counter from './Counter'
 
 export const CountContext = createContext({})
 

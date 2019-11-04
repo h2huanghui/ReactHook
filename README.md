@@ -40,7 +40,7 @@ function Index() {
 }
 ```
 
-## useContext 组件传值
+## 7. useContext 组件传值
 ```
 import React, { useState, createContext, useContext } from 'react'
 
@@ -56,4 +56,27 @@ const count = useContext(CountContext) //count是将要传递的变量
 
 ```
 
-## useReducer
+## 8. useReducer
+```
+const reducer = (state, action) => {
+    switch (action.type) {
+        case UPDATE_COLOR:
+            return action.color
+        default:
+            return state
+    }
+}
+
+export const Color = props => {
+    const [color, dispatch] = useReducer(reducer, 'blue')
+    return (
+        <ColorContext.Provider value={{ color,dispatch }}>
+            {props.children}
+        </ColorContext.Provider>
+    )
+}
+```
+## 9. useMemo主要用来解决使用React hooks产生的无用渲染的性能问题
+使用function的形式来声明组件,失去了shouldComponentUpdate这个生命周期(可以在组件更新之前,对比状态,组件是否需要更新)  <br>
+useEffect useMemo(子组件中有axios请求,但是没必要去更新)<br>
+`const newHh = useMemo(() => changeHh(hh),[hh]) //传递两个参数` 

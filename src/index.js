@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom';
 // import Example3 from './Example3'
 // import { UseContext } from './UseContext'
 // import UseReducer from './UseReducer'
-import ExampleDemo from './example/index'
+// import ExampleDemo from './example/index'
+import { UseMemo } from './useMemoDemo/UseMemo'
 
-ReactDOM.render(<ExampleDemo />, document.getElementById('root'));
+ReactDOM.render(<UseMemo />, document.getElementById('root'));

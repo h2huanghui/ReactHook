@@ -3,6 +3,7 @@ import { ColorContext, UPDATE_COLOR } from './Color'
 
 function Buttons() {
     const { color, dispatch } = useContext(ColorContext)
+    console.log(useContext(ColorContext))
     return (
         <div>
             <button onClick={() => { dispatch({ type:UPDATE_COLOR,color:'yellow'}) }}>黄色</button>
