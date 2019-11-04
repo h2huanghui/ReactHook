@@ -12,7 +12,7 @@ function UseRef() {
     const textRef = useRef() //创建ref
 
     useEffect(() => {
-        textRef.current = text //保存变量
+        textRef.current = text //text状态发生变化,保存变量
         console.log('textRef.current',textRef.current)
     })
     return (

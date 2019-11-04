@@ -8,6 +8,7 @@ import ReactDOM from 'react-dom';
 // import UseReducer from './UseReducer'
 // import ExampleDemo from './example/index'
 // import { UseMemo } from './useMemoDemo/UseMemo'
-import UseRef from './useRefDemo/UseRef'
+// import UseRef from './useRefDemo/UseRef'
+import UseWinSizeDemo from './useWinSizeDemo/UseWinSize'
 
-ReactDOM.render(<UseRef />, document.getElementById('root'));
+ReactDOM.render(<UseWinSizeDemo />, document.getElementById('root'));

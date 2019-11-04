@@ -81,6 +81,8 @@ export const Color = props => {
 useEffect useMemo(子组件中有axios请求,但是没必要去更新)<br>
 `const newHh = useMemo(() => changeHh(hh),[hh]) //传递两个参数` 
 
-## useRef获取DOM元素和保存变量(不建议这样操作,界面的变化可以通过状态来控制)
+## 10. useRef获取DOM元素和保存变量(不建议这样操作,界面的变化可以通过状态来控制)
 
+## 11. 自定义Hook函数(一定是use开头,区分组件和自定义函数)
 
+## 12. useCallback(缓存方法)
