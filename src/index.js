@@ -7,6 +7,7 @@ import ReactDOM from 'react-dom';
 // import { UseContext } from './UseContext'
 // import UseReducer from './UseReducer'
 // import ExampleDemo from './example/index'
-import { UseMemo } from './useMemoDemo/UseMemo'
+// import { UseMemo } from './useMemoDemo/UseMemo'
+import UseRef from './useRefDemo/UseRef'
 
-ReactDOM.render(<UseMemo />, document.getElementById('root'));
+ReactDOM.render(<UseRef />, document.getElementById('root'));

@@ -80,3 +80,7 @@ export const Color = props => {
 使用function的形式来声明组件,失去了shouldComponentUpdate这个生命周期(可以在组件更新之前,对比状态,组件是否需要更新)  <br>
 useEffect useMemo(子组件中有axios请求,但是没必要去更新)<br>
 `const newHh = useMemo(() => changeHh(hh),[hh]) //传递两个参数` 
+
+## useRef获取DOM元素和保存变量(不建议这样操作,界面的变化可以通过状态来控制)
+
+
